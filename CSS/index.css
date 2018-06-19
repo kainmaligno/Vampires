@@ -1,0 +1,188 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+@font-face{
+    font-family: "Zombie Holocaust";
+    font-style: normal;
+    font-weight: normal;
+    src:("/fonts/zombie-holocaust.regular.ttf");
+  }
+
+  @font-face{
+    font-family: "Unquiet Spirits";
+    font-style: normal;
+    font-weight: normal;
+    src:("/fonts/Unquiet Spirits.ttf");
+  }
+
+html{
+    background-color: black;
+    background: url("../images/wallpapers/morrigan_tr.png")no-repeat;
+    font-family: "Zombie Holocaust";
+    color: red;
+    background-position-x: 90%;
+    background-position-y: 200px;
+
+}
+
+body{
+
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+}
+
+.contenedor-nav{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-logo img{
+    height: 200px;
+    width: 300;
+}
+
+.nav-ul{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    font-size: 6vh;
+}
+
+.nav-ul li a{
+    padding: 18px;
+    margin-left: 10px;
+    color: #5D2D64;
+    border: solid #5D2D64;
+    border-color: #5D2D64;
+    border-radius:10px;
+    line-height: 30px;
+    transition: all 420ms;
+    background-color: #1e1e1e;
+
+}
+
+.nav-ul li a:hover{
+    color: crimson;
+    cursor:pointer;
+    background-color: black;
+}
+
+#menu{
+    border: solid #3D1F41;
+    border-radius: 20px;
+    /* line-height: 10px; */
+    font-size: 6vh;
+    width: 600px;
+    height: 500px;
+    margin-left: 20%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+h2{
+    margin-left: 30%;
+    margin-top: 40px;
+    font-size: 5rem;
+    letter-spacing: 20px;
+    /* font-family: "Unquiet Spirits"; */
+    color: #40A48E;
+    display: inline-block;
+  border-bottom: 4.5px solid #5D2D64;
+  padding-bottom: 7px;
+
+}
+
+
+.contenedor-menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.nav-menu div{
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+.button{
+    padding: 15px;
+    margin: 18px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    margin-left: 10px;
+    color: #5D2D64;
+    transition: all 520ms;
+
+}
+.button:last-child{
+    margin: 0 auto;
+}
+
+.button:hover{
+    color: crimson;
+    cursor:pointer;
+    background-color: black;
+    border-radius:10px;
+}
+
+.popup{
+    background-color: #ffffff;
+    color: #888888;
+    height: 245px;
+    left: 100%;
+    padding: 20px;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 550px;
+    z-index: 101;
+    -moz-box-reflect:0px 0px 10px 1px #888888;
+    -webkit-box-reflect: 0px 0px 10px 1px #888888;
+    box-shadow: 0px 0px 10px 1px #888888;
+    border-radius: 10px;
+    -moz-border-radius:10px;
+}
+
+
+.overlay{
+    background: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+
+a.close{
+    background: url() repeat scroll left top transparent;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    left: 32px;
+    position: relative;
+    top: -33px;
+    width: 26px;
+}

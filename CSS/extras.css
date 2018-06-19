@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+@font-face{
+    font-family: "Zombie Holocaust";
+    font-style: normal;
+    font-weight: normal;
+    src:("/fonts/zombie-holocaust.regular.ttf");
+  }
+
+  @font-face{
+    font-family: "Unquiet Spirits";
+    font-style: normal;
+    font-weight: normal;
+    src:("/fonts/Unquiet Spirits.ttf");
+  }
+
+
+
+html{
+    background-color: black;
+    background: url("../images/wallpapers/morriganelg_tr.png")no-repeat;
+    background-attachment: fixed;
+    font-family: "Zombie Holocaust";
+    color: red;
+    background-position-x: 90%;
+    background-position-y: 200px;
+
+}
+#menuextra{
+    border: solid #3D1F41;
+    border-radius: 20px;
+    /* line-height: 10px; */
+    font-size: 4vh;
+    width: 800px;
+    height: 700px;
+    margin-left: 10%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedor-menu{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav-menu div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+    padding: 10px;
+    margin: 15px;
+}
+
+
+h1{
+  margin: 20px 30px 20px 30px;
+  text-align: center;
+  display: inline-flex;
+  color: black;
+}
+
+p{
+  text-align: justify;
+  text-align: center;
+  font-family: "Unquiet Spirits";
+  font-size: 32px;
+    color: #5D2D64;
+    line-height: 60px;
+}
+
+.button{
+    padding: 15px;
+    margin: 18px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px;
+    margin-left: 10px;
+    color: #5D2D64;
+    transition: all 520ms;
+
+}
+.button:last-child{
+    margin: 0 auto;
+}
+
+.button:hover{
+    color: crimson;
+    cursor:pointer;
+    background-color: black;
+    border-radius:10px;
+}
+
+
+/* entradas **/
+
+div.contenido::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main {
+  width: 70%;
+  float: left;
+  padding-right: 40px;
+}
+article {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+h2 {
+    color: #00b8e4;
+    margin-bottom: 20px;
+}
+article::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+article img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+article p {
+    line-height: 2;
+    text-align: justify;
+    text-align: left;
+    font-family: "Unquiet Spirits";
+}
+
+
+.bio-table {
+  font-size: 1.5em;
+  margin: 0 auto 40px;
+    font-family: "Unquiet Spirits";
+}
+
+.bio-table th,
+.bio-table td {
+  border-bottom: 1px solid #000;
+  padding: 5px 10px;
+}
