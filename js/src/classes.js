@@ -13,6 +13,8 @@ function Vamp() {
   this.soundpunch.src = 'images/sonidos/punch.wav';
   this.soundkick = new Audio();
   this.soundkick.src = 'images/sonidos/patada.wav';
+  this.soundrisa = new Audio();
+  this.soundrisa.src = 'images/sonidos/risa.wav';
   //movimiento
   this.ydir = 5;
   this.xdir = 5;

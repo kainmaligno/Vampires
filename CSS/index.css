@@ -186,3 +186,26 @@ a.close{
     top: -33px;
     width: 26px;
 }
+
+.titulote h1{
+    font-display: center;
+    font-size: 20vw;
+    
+}
+
+.choncho{
+    font-display: center;
+    font-size: 30px;
+}
+
+.texto{
+    margin-left: 30%;
+    margin-top: 10%;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+
+}
+.texto a{
+    margin-top: 30%;
+}
