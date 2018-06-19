@@ -47,7 +47,7 @@ function update() {
   drawFires();
   generateEnemies();
   checkCollition();
-  hitDetection();
+  //hitDetection();
   //if(frames%160){
   //vamp.sprite.update(vamp,frames);
   //vamp.sprite.render(ctx);

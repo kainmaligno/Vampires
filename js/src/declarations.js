@@ -9,7 +9,7 @@ var board = new Board();
 //heroes
 
 var vamp = new Vamp();
-var enemie = new Enemies();
+var enemie = new Enemies(fires);
 var fires = new Fire(vamp);
 var moves = 0;
 

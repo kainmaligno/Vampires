@@ -1,6 +1,6 @@
 //generate
 function generateEnemies() {
-  if (!(frames % 30 === 0)) return;
+  if (!(frames % 200 === 0)) return;
   var randomPosition = Math.floor(Math.random() * 399);
   var randomEnemie = Math.floor(Math.random() * 4);
   if (randomPosition > 170 && randomPosition < 350) {
@@ -49,17 +49,6 @@ function checkCollition() {
       gameOver();
     }
   });
-  // fireArray.forEach(function(fires, indice){
-  //   if(enemie.isTouching(fires)){
-  //     vamp.health +=20;
-  //     killEnemies();
-  //     enemiesArray.splice(indice, 1);
-  //   }
-  // })
-
-}
-
-function hitDetection(){
   fireArray.forEach(function(fires, indice){
     if(enemie.isTouching(fires)){
       vamp.health +=20;
@@ -67,7 +56,18 @@ function hitDetection(){
       enemiesArray.splice(indice, 1);
     }
   })
+console.log('muerte a los tocaods')
 }
+
+// function hitDetection(){
+//   fireArray.forEach(function(fires, indice){
+//     if(enemie.isTouching(fires)){
+//       vamp.health +=20;
+//       killEnemies();
+//       enemiesArray.splice(indice, 1);
+//     }
+//   })
+// }
 
 function gameOver() {
   stopGame();

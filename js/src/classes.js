@@ -16,15 +16,15 @@ function Vamp() {
   //movimiento
   this.ydir = 5;
   this.xdir = 5;
-  this.img = new Image();
-  this.img.src = 'images/Demitri_mod.png'
+  // this.img = new Image();
+  // this.img.src = 'images/Demitri_mod.png'
   //sprite
 
   this.idleSprite = new Sprite(
     "images/Tabla_Dimitri.png",
     [0, 281],
-    [180, 140],
-    5,
+    [180,140],
+    7,
     [1,2,3,4,5],
     null,
     false,
@@ -39,7 +39,7 @@ function Vamp() {
     "images/DemitripunchLX.png",
     [0, 0],
     [226.77, 143],
-    2,
+    7,
     [0, 1, 2, 3, 4, 5, 6, 7, 8],
     null,
     true,
@@ -84,7 +84,7 @@ function Vamp() {
     "images/Tabla_Dimitri.png",
     [0, 427],
     [180, 140],
-    2,
+    8,
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12],
     null,
     true,
@@ -99,7 +99,7 @@ function Vamp() {
     "images/Tabla_Dimitri.png",
     [0, 565],
     [180, 140],
-    10,
+    20,
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     null,
     true,
@@ -112,7 +112,6 @@ function Vamp() {
 
   this.onload = function () {
     this.draw;
-
     //ctx.fillRect(this.xpoint, this.ypoint, this.Dwidth, this.Dheight);
   }.bind(this);
 
@@ -211,8 +210,8 @@ function Vamp() {
 
   this.isTouching = function (enemie) {
    
-    return (this.xpoint - 50 < enemie.x + enemie.width) && //si heroe es menor que enemigo + width
-      (this.xpoint - 70 + this.Dwidth - 70 > enemie.x) && //si herore + su ancho es mayor que el alto del enemigo
+    return (this.xpoint - 90 < enemie.x + enemie.width) && //si heroe es menor que enemigo + width
+      (this.xpoint - 90 + this.Dwidth - 90 > enemie.x) && //si herore + su ancho es mayor que el alto del enemigo
       (this.ypoint + 100 < enemie.y + enemie.height) && //si el alto del heroe es menor que el alto del enemifo mas su alto
       (this.ypoint + 100 + this.Dheight + 150 > enemie.y);
     // (this.x < pipe.x + pipe.width) &&
@@ -224,7 +223,7 @@ function Vamp() {
 
 function Fire(vamp) {
   this.speed = 200;
-  this.xpoint =vamp.xpoint + vamp.Dwidth/1.8;
+  this.xpoint =vamp.xpoint + vamp.Dwidth/1.3;
   this.ypoint = (vamp.ypoint + vamp.Dheight)/2;
   this.Dwidth = 350;
   this.Dheight = 350;
@@ -254,11 +253,6 @@ function Fire(vamp) {
       this.sprite.update(this, frames);
       this.sprite.render(ctx);
     }
-
-  
-
-
-
 }//termina fire
 
 
@@ -362,7 +356,7 @@ function Enemies(randomPosition, randomEnemie) {
   }; //final draw
 
   this.isTouching = function (fires) {
-    return (this.x< fires.xpoint + fires.Dwidth) && //si heroe es menor que enemigo + width
+    return (this.x < fires.xpoint + fires.Dwidth) && //si heroe es menor que enemigo + width
       (this.x + this.width > fires.xpoint) && //si herore + su ancho es mayor que el alto del enemigo
       (this.y< fires.ypoint + fires.Dheight) && //si el alto del heroe es menor que el alto del enemifo mas su alto
       (this.y + this.height > fires.ypoint);
